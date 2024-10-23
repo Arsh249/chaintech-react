@@ -1,3 +1,31 @@
+# ChainTech Account Management 
+
+This is a simple **ReactJS** application that allows users to create and manage accounts. The app includes a registration page, login page, and an account management page where users can view and update their account information. This project uses ReactJS and localStorage for data persistence.
+
+## Features
+
+- **User Registration**: 
+  - Users can sign up with their username, email, password, age, and address.
+  - Email validation is performed to ensure a correct format (minimum 3 characters before `@`, domain with 3 characters before `.` and at least 2 characters after `.` like `.com`).
+  
+- **User Login**:
+  - Users can log in using either their email or username along with their password.
+  - Simple authentication flow using localStorage.
+
+- **Account Management**:
+  - Users can view and edit their account details (username, password, age, and address) in a user-friendly interface.
+  - Fields in the account page are displayed as labels and become editable only on click, providing a clean and minimal design.
+  
+- **Session Persistence**:
+  - User sessions are maintained using localStorage, so users remain logged in until they log out manually.
+
+- **Responsive Design**:
+  - The app is fully responsive and works well on both desktop and mobile devices.
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
