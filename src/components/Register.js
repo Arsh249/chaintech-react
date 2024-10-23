@@ -1,4 +1,3 @@
-// src/components/Register.js
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import '../Register.css';
@@ -10,11 +9,10 @@ const Register = () => {
   const [username, setUsername] = useState('');
   const [age, setAge] = useState('');
   const [address, setAddress] = useState('');
-  const [emailError, setEmailError] = useState(''); // To handle email validation error
+  const [emailError, setEmailError] = useState(''); 
   const navigate = useNavigate();
 
   const validateEmail = (email) => {
-    // Updated email regex pattern as per the new requirements
     const emailRegex = /^[a-zA-Z0-9._%+-]{3,}@[a-zA-Z0-9.-]{3,}\.[a-zA-Z]{2,}$/;
     return emailRegex.test(email);
   };
@@ -25,7 +23,7 @@ const Register = () => {
       setEmailError('Please enter a valid email address');
       return;
     } else {
-      setEmailError(''); // Clear email error if validation is passed
+      setEmailError(''); 
     }
 
     if (password !== confirmPassword) {
@@ -69,7 +67,7 @@ const Register = () => {
             required
             className="register-input"
           />
-          {emailError && <p className="error-text">{emailError}</p>} {/* Show email error message */}
+          {emailError && <p className="error-text">{emailError}</p>} 
           <input
             type="password"
             placeholder="Password"
